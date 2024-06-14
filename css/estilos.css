@@ -9,9 +9,6 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-  
-   
-
 }
 /* ------estilos header------------- */
 header{
@@ -20,7 +17,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 80px;
+    height: 70px;
     box-shadow: 0 4px 15px -5px black ;
     z-index: 2;
 }
@@ -35,13 +32,12 @@ header h1 {
     justify-content: space-between;
 }
 .logo{
-    height: 80px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .logo img{
-
     height: 29px;
     border-radius: 4px;
 }
@@ -50,7 +46,7 @@ header h1 {
 }
 .menu{
     /* mismo alto que el header */
-    height: 80px;
+    height: 70px;
 }
 .menu nav{
     height: 100%;
@@ -67,7 +63,6 @@ header h1 {
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
 .menu nav ul li a{
     text-decoration: none;
@@ -89,27 +84,21 @@ header h1 {
 .menu nav ul li a:hover{
     color:rgb(94, 182, 245) ;
 }
-
 .menu .texto-menu-selecionado{
     color: rgb(94, 182, 245) ;
 }
-
-
 /* --------portada---------- */
 .container-portada{
     width: 100%;
     height: 500px;
     position: relative;
-   margin-top:  80px;
+   margin-top:  70px;
     background-image:url(../img/imagenes/edificios.jpg);
     /* centro la img de fondo */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-
-
 .container-info-portada{
     max-width: 800px;
     /* mismo alto que su padre  */
@@ -121,22 +110,17 @@ header h1 {
     justify-content: center;
     align-items: center;
 }
-
-
 .container-info-portada h2{
     font-family: "Source Code Pro", monospace;
     background-color:rgba(255, 255, 255,0.4);
    border-radius: 10px;
     color:#000;
     margin-bottom: 40px;
-    font-size: 2.5em;
-   
-}/* -----contenido de la portada-- contacto---- */
-
+    font-size: 2.5em;  
+}
 /* -----contenido de la portada---- */
 .container-info-portada p {
    color: #000;
-   
 /* -----fontawesome----  */
    font-family: "Source Code Pro", monospace;
     font-size: 1.5em;
@@ -144,18 +128,13 @@ header h1 {
     background-color:rgba(255, 255, 255,0.4);
     border-radius: 10px;
 }
-
-
 /* ---------------contenido del articulo-------------- */
-
-
 .container-articulo {
     width: 1200px;
     margin: auto;
     margin-top: 40px;
     display: flex;
     justify-content: center;
-
 }
 article{
     width: 100%;
@@ -165,8 +144,6 @@ article{
     border-radius: 6px;
     position: relative;
     overflow: hidden;
-   
-
 }
 article::before{
     content:"" ;
@@ -176,7 +153,6 @@ article::before{
     top: 0;
     left: 0;
     position: absolute;
-
 }
 article h2{
     margin-top: 20px;
@@ -194,9 +170,7 @@ article img {
     width: 100%;
     margin-top: 20px;
 }
-
 /* ------aside--------- */
-
 .container-aside aside{
     border: #000 solid;
     width: 320px;
@@ -209,16 +183,12 @@ article img {
 .container-aside aside  img{
     width: 100%;
 }
-
 .container-aside aside h2, .container-aside aside p{
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 0 20px;
-
 }
-
 /* -----pie de pagina----- */
-
 .container-footer footer{
     height: 40px;
     display: flex;
@@ -229,7 +199,6 @@ article img {
     margin-top: 40px;
     background-color: #777777;
 }
-
 .redes-footer {
     /* margen entre los iconos */
    margin: 0 20px;
@@ -240,7 +209,6 @@ article img {
  
 /* ----menu responsive---- */
   .nav-label {
-   
     width: 50px;
     height: 50px;
     position: absolute;
@@ -253,36 +221,31 @@ article img {
   }
   .nav-input{
     display: none;
-    
   }
-
-
-  /* --------pestaña contacto------ */
-
-/* ---info pestaña contacto--- */
-.container-info-portada-contacto{
-    max-width: 800px;
-    /* mismo alto que su padre  */
-    height: 500px;
-    margin: auto;
-    text-align: center;
-    display: flex;
-    justify-content: end;
-   align-items:flex-end ;
-   justify-content: left; 
-}
-/* ---portada pestaña contacto----- */
+/* -------------portada pestaña contacto-------- */
 .container-portada-contacto{
     width: 100%;
     height: 500px;
     position: relative;
-   margin-top:  80px;
+   margin-top:  70px;
     background-image:url(../img/imagenes/edificios.jpg);
     /* centro la img de fondo */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* ---info pestaña contacto--- */
+.container-info-portada-contacto{
+    max-width: 100%;
+     /* mismo alto que su padre  */
+     height: 500px;
+     margin: auto;
+     text-align: start;
+     display: flex;
+     justify-content: end;
+    align-items:flex-end ;
+    justify-content: left; 
+ }
 /* ---estilo portada contacto---- */
 .container-portada-contacto::before{
     content: "";
@@ -293,8 +256,7 @@ article img {
     left: 0;
     top: 0;
 }
-
-  .container-info-portada-contacto h2{
+.container-info-portada-contacto h2{
     font-family: "Source Code Pro", monospace;
     z-index: 1;
    border-radius: 10px;
@@ -303,11 +265,12 @@ article img {
     font-size: 2.5em;  
 } 
 .container-contacto{
+    max-width: 1200px;
+    margin: auto;
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    text-align: left;
-   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
 
 }
 .container-contacto h2, b{
@@ -315,41 +278,39 @@ article img {
 }
 /* ----datos de la empresa--- */
 .container-info{
-  
-
-    text-align: left;
-
-
+    margin: 0 10px;
+}
+.container-info-contacto{
+    margin: 0 10px;
 }
 /* ----estilos del formulario----- */
+.container-form{
+    margin: 0 10px;
+}
 .container-form form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    display: grid;
+    justify-content: flex-start;
 }
 .form-input {
     font-size:16px;
-    margin: 15px 10px;
-    border-color: rgb(94, 182, 245);
-    border-radius: 6px;
-   
+    margin: 15px 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    resize: none;
+    /* border: 2px solid rgb(88, 90, 92); */
+    border: none;
 }
 .enviar{
-
-    background-color:rgb(94, 182, 245);
+    background-color:rgb(193, 207, 216);
 }
+.enviar:hover{
+    background-color: dodgerblue;
+}
+.enviar:active{
+    background-color: #777777;
 
-
-
+}
 /* ----estilos pestaña servicios------- */
-.container-info-portada-servicios{
-    display: flex;
-    
-    justify-content: flex-start;
-   align-items: flex-end;
-}
-
 .container-info-portada-servicios h2{
     font-family: "Source Code Pro", monospace;
     z-index: 1;
@@ -357,48 +318,33 @@ article img {
     color:black;
     margin-bottom: 40px;
     font-size: 2.5em;  
-
 }
-/* .container-info-portada-servicios h2 b{
-   ;
-
-} */
 .container-info-portada-servicios{
-    max-width: 800px;
+    max-width: 100%;
     /* mismo alto que su padre  */
     height: 500px;
     margin: auto;
-    text-align: center;
+    text-align: start;
     display: flex;
     justify-content: end;
    align-items:flex-end ;
    justify-content: left; 
 }
-
 .container-servicios{
     margin: 0 20px;
-    
     display: grid;
-
     grid-row: 1fr 1fr 1fr;
     grid-row-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px; 
-  
 }
 .servicio i{
     font-size: 24px;
 }
 .servicio p{
-    
-    color: #777777;
-  
+    color: #777777; 
 }
-
-
-
 /* ------------estilos proyectos--------- */
-
 .galeria-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -411,9 +357,17 @@ article img {
     height: 100%;
     object-fit: cover;
 }
-
-
-
+.galeria-item{
+    position: relative;
+}
+.titulo-img{
+    font-size: 1rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,5));
+}
    /* ------media queris----- */
    @media  screen and (max-width: 1220px){
     .header-content, .container-articulo, .container-foote footer {
@@ -421,77 +375,76 @@ article img {
         padding: 0 20px;
     }
    }
-
    @media  screen and (max-width: 1020px){
     .container-articulo{
         width: 100%;
         flex-direction: column;
     }
+    .container-contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   }
+   @media  screen and (max-width: 850px){
     .container-aside{
         display: flex;
         justify-content: center;
     }
-   }
-   @media  screen and (max-width: 850px){
+    /* -----------menu hamburguesa----------- */
     .nav-label{
         display: block;
     }
     .menu {
         position: absolute;
         height: 200px;
-        top: 80px;
+        top: 70px;
         left: -70%;
         background-color: white;
         box-shadow: 0 4px 25px -5px black ;
         margin: 0;
-        
     }
-   
-
     .menu nav ul {
         flex-direction: column;
         align-items: flex-start;
         padding:0;
         width: 100%;
-        
     }
-
- 
     .nav-input:checked + .menu {
        left:  0;
-       transition: all 0.6s;
-       
- }
-
+       transition: all 0.6s;  
+    }
 }
-
 /* ---media query contacto--- */
-@media  screen and (max-width: 850px){
+/* @media  screen and (max-width: 850px){
     .container-contacto{
         flex-direction: column;
-        margin: 0 10px;
-    }
-   
-
-}
-
+     
+   }
+} */
 /* ------media quiery servicios--- */
-@media  screen and (max-width: 850px){
+@media  screen and (max-width: 900px){
     .container-servicios, .galeria-container{
         grid-template-columns: repeat(2, 1fr) ;
     }
 }
-
-@media  screen and (max-width: 700px){
+@media  screen and (max-width: 800px){
     .container-servicios {
         grid-template-columns: repeat(1, 1fr) ;
     }
+    .container-aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
 }
-
-
 /* ---------media quiery proyectos----- */
-@media  screen and (max-width: 500px){
+@media  screen and (max-width: 600px){
     .galeria-container{
         grid-template-columns: repeat(1, 1fr) ;
     }
-}
+    .container-footer footer{
+        flex-direction: column;
+    }
+ }   
